@@ -21,3 +21,12 @@ def register_check(dict_param: dict) -> str:
 #testing the function to see if it gives desired results
 register = {'Michael': 'yes', 'John': 'no', 'Peter': 'yes', 'Mary': 'yes'}
 print(register_check(register))
+
+
+# Extra Challenge: Lowercase Names
+
+names = ['kerry', 'dickson', 'John', 'Mary', 'carol', 'Rose', 'adam']
+def sorted_lowercase_names(names: list) -> tuple:
+	sorted_list = [name for name in names if name.islower() == True]
+	return sorted_list
+print(sorted_lowercase_names(names))
