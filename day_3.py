@@ -28,5 +28,5 @@ print(register_check(register))
 names = ['kerry', 'dickson', 'John', 'Mary', 'carol', 'Rose', 'adam']
 def sorted_lowercase_names(names: list) -> tuple:
 	sorted_list = [name for name in names if name.islower() == True]
-	return sorted_list
+	return tuple(sorted_list)
 print(sorted_lowercase_names(names))
