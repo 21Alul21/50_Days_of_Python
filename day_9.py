@@ -23,17 +23,16 @@ def zeroes_last(list_arg: list) -> List[int] | int:
     """
 
     
-    for i in list_arg:
-        if list_arg.count(0) == 0:
-            list_arg.sort(reverse=True)
-            return list_arg
-        else:
-            zero_count = list_arg.count(0)
-            list_copy = list_arg.copy()
-            list_copy.remove(0)
-            for i in range(zero_count):
-                list_copy.append(0)
-            return list_copy
+    if list_arg.count(0) == 0:
+        list_arg.sort(reverse=True)
+        return list_arg
+    else:
+        zero_count = list_arg.count(0)
+        list_copy = list_arg.copy()
+        list_copy.remove(0)
+        for i in range(zero_count):
+            list_copy.append(0)
+        return list_copy
 
 
 
