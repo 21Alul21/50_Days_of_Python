@@ -39,5 +39,6 @@ def swap_values(list_arg: List[int]) -> List[int]:
     return list_arg
                 
 if __name__ == '__main__':
-    print(equal_strings('love', 'volt'))    # outoputs false
+    print(equal_strings('love', 'volt'))    # outoputs False
+    print(equal_strings('love', 'volt'))    # outoputs True
     print(swap_values([1,23,5,6]))          # outputs [6, 23, 5, 1]
