@@ -1,4 +1,4 @@
-#!/usr/bin/env python3\
+#!/usr/bin/env python3
 """ module containing solution to day 12
 task
 """
@@ -30,12 +30,14 @@ def age_in_minutes():
                         greater than or equal to 1900')
             if int(birth_year) > int(datetime.now().strftime('%Y')):
                 print('input a valid year, you are ahead of time')
-            else:
+            
+        except Exception as e:
+            print(f'erorr: {e}')
+        
+        else:
                 age = (int(datetime.now().strftime('%Y'))) - int(birth_year) 
                 return f' You are {age * 525600} mins old'
                 break
-        except Exception as e:
-            print(f'erorr: {e}')
 
 
 if __name__ == '__main__':
