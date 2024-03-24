@@ -17,18 +17,20 @@ def your_vat():
         
         else:
             item_and_vat = item_price * (1 + (vat_percentage/100))
-            return f'your item price including vat is: {item_and_vat}'
+            return f'your item price including vat is: {item_and_vat: .2f}'
             break
 
 
 # Extra Challenge: Pyramid of Snakes
-def python_snakes(num):
+def python_snakes(n):
     """ function that an argument and 
     and creates a shape using the range
     """
-    for i in range(1, num):
-        print('*' * i)
-
+    for i in range(1, n+1):
+        print(' ' * (n-i), end='')
+        iter = '*' * i
+        joined = ' '.join(iter)
+        print (joined)
 if __name__ == "__main__":
     print(your_vat())
     python_snakes(7) 
