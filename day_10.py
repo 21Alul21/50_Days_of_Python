@@ -20,7 +20,7 @@ def convert_numbers(list_arg: List[int]) -> List[str]:
     with comma seperation
     """
 
-    comma_sep_list = []
+    comma_sep_list = list()
     
     for i in list_arg:
         str_val = ''
