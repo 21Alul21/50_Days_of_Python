@@ -13,7 +13,6 @@ def same_in_reverse(string_arg: str) -> bool:
         return True
     else:
         return False
-    
 
 
 # Extra Challenge: What's My Age?
@@ -25,11 +24,15 @@ def your_age():
     if name in name_age:
         return f'Hi, {name.title()}, you are {name_age[name]} years old' 
     else:
-        print("your name is not in the dictionary")
-        new_user_age = int(input("enter your age: "))
-        name_age[name] = new_user_age  #alternatively do: new_age.update({name: new_user_age})
-        return f'Hi, {name.title()}, you are {new_user_age} years old'
-
+        try:
+            print("your name is not in the dictionary")
+            new_user_age = int(input("enter your age: "))
+            name_age[name] = new_user_age  #alternatively do: new_age.update({name: new_user_age})
+            return f'Hi, {name.title()}, you are {new_user_age} years old'
+        except ValueError as e:
+            return f'error: {e}'
+        
+    
 if __name__ == "__main__":
     print(same_in_reverse('dad'))  # outputs True
     print(your_age())
