@@ -15,15 +15,20 @@ def user_name() -> str:
 
 from typing import List
 # Extra Challenge: Sort by Length
-names = ["peter", "John", "Andrew"]
+names = ["peter", "John", "Andrew", 'ft', 'g']
 def sort_length(str_lst: List[str]) -> List[str]:
-    for i in range(len(str_lst) -1):
-        if len(str_lst[i]) > len(str_lst[i + 1]):
-            str_lst[i], str_lst[i + 1] = str_lst[i + 1], str_lst[i]
-    return str_lst
+    """ function that takes a list of strings as an
+    argument and sorts the strings in ascending order
+    acording to their length 
+    """
 
+    for i in range(len(names)):
+        for j in range((len(names) -1) ):
+            if len(names[j]) > len(names[j + 1]):
+                names[j], names[j + 1] = names[j + 1], names[j]
+    return names
 
 
 if __name__ == '__main__':
-    print(user_name())
-    print(sort_length(names))
+    #print(user_name())
+    print(sort_length(names)) 
