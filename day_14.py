@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """ module containing solution to day 14
 task
 """

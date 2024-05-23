@@ -14,4 +14,4 @@ def any_number(*args: int|float):
     return sum/len(args)
 
 if __name__ == '__main__':
-    print(any_number(34, 45, 45, 45))
+    print(any_number(34, 45, 45, 45))     # outputs 42.25

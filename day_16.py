@@ -14,6 +14,7 @@ def sum_list(nested_list: List[List[int]]) -> str:
     return sum_val
 
 
+
 # Extra Challenge: Unpack A Nest
 def unpack_a_nest():
     """ code that generates a list of the numbers;
@@ -30,4 +31,4 @@ def unpack_a_nest():
 
 if __name__ == '__main__':
     print(sum_list([[2,4,5,6], [2,3,5,6]]))   # outputs 33
-    print(unpack_a_nest())                    # outputs [34, 67,  ]
+    print(unpack_a_nest())                    # outputs [34, 67, 78 ]
