@@ -10,6 +10,7 @@ def count_words(str_: str) -> int:
     string_list = str_.split(' ')
     return (len(string_list))
 
+
 def count_elements(str__: str) -> int:
     """ takes a string of words and counts
     how many elements are in the string
